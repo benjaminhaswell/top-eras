@@ -1,0 +1,48 @@
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: all .15s ease;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    transition: all .2s ease-in-out;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
