@@ -10,20 +10,14 @@
   grid-template-columns: 300px 300px 300px;
 }
 
-.button-container .button {
-  margin: 5px;
-}
-
-@media (max-width: 768px) {
-  .button-container .button {
-      flex: 0 0 48%;
-      max-width: 48%;
+@media (max-width: 960px) {
+  .button-container {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .button-container .button {
-      flex: 0 0 100%;
-      max-width: 100%;
+  .button-container {
+    grid-template-columns: 1fr;
   }
 }
