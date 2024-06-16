@@ -1,0 +1,22 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
